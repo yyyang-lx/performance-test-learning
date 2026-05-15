@@ -1,6 +1,6 @@
 # performance-test-learning
 JMeter 性能测试学习笔记与脚本，包含 Docker+Nginx 测试环境搭建过程
-# 性能测试学习作品集
+# 性能测试学习记录
 
 # 📌 项目简介
 自学 JMeter 性能测试，搭建 Docker + Nginx 测试环境，记录完整的踩坑与学习过程。
