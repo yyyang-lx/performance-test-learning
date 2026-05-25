@@ -47,7 +47,7 @@ docker-compose up -d
 因为前面已经拉取了，在终端cd进入jeecgboot-vue3的文件夹，pnpm install下载依赖（耐心等待）
 通过 pnpm dev命令启动前端
 
-### 3.5前后端连接
+### 3.5 前后端连接
 由于前端的mock使用的是在线数据并没有连接到真正的后端及数据库，
 - 更改配置C:\Windows\System32\drivers\etc\hosts的内容，在末尾加上
 ```bash
@@ -69,7 +69,7 @@ url: jdbc:mysql://jeecg-boot-mysql:3306/jeecg-boot?....
 host: jeecg-boot-redis
 ```
 
-### 3.6又遇到问题了，修改了配置文件，要再来一遍
+### 3.6 又遇到问题了，修改了配置文件，要再来一遍
 
 - 修改 docker-compose.yml
 给 jeecg-boot-system 服务添加 environment 配置，在post后，networks前加
@@ -93,6 +93,13 @@ environment:
   ```bash
   cd D:\test-project\jeecg-boot\jeecgboot-vue3
   pnpm dev
+  ```
+  ### 3.7 关闭后再次打开网页
+  ```bash
+  cd "D:\test-project\jeecg-boot\jeecg-boot" #进入项目目录
+  docker-compose up -d jeecg-boot-mysql jeecg-boot-redis jeecg-boot-system # 启动后端，检查一下docker-compose.yml是否添加了环境变量
+  cd "D:\test-project\jeecg-boot\jeecgboot-vue3" #进入前端目录
+  pnpm dev # 启动
   ```
   ## 四、总结
   前后端之间的连接要看配置文件，出现异常可以打印日志docker ps查看具体内容（容器是否启动）。通过这次的部署，对Docker拉取镜像有了更加深入的了解，不仅可以下载资源，还可以进行打包编译。希望此项目能帮助我深入学习测试的工作。
