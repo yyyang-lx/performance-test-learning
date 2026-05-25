@@ -13,6 +13,9 @@
 | jeecg-boot-mysql | jeecg-boot-mysql:latest | 3306->3306 | Up |
 | jeecg-boot-redis | redis:5.0 | 6379->6379 | Up |
 | jeecg-boot-system | jeecg-boot-system:latest | 8080->8080 | Up |
+<img width="2150" height="1173" alt="image" src="https://github.com/user-attachments/assets/e385455e-5391-4e53-ae88-bda36d17d6c2" />
+<img width="2553" height="1453" alt="image" src="https://github.com/user-attachments/assets/0ccc0e39-1fe4-4172-9d97-eea072b9c267" />
+<img width="2559" height="1466" alt="image" src="https://github.com/user-attachments/assets/9ff0f270-cc17-40e4-b0fa-a1eeb763c8f6" />
 
 ## 登录验证
 - 登录接口：POST /jeecg-boot/sys/login
