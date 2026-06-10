@@ -1,5 +1,5 @@
 # 🚀 JEECG BOOT Docker 环境搭建完整复盘
-## 前情摘要 （git拉取了一个Jeecg的ERP项目，希望能在本地部署对其进行测试）
+## 前情摘要 （git拉取了一个Jeecg项目，希望能在本地部署对其进行测试）
 ```powershell
 git clone https://gitee.com/jeecg/jeecg-boot.git
 ```
